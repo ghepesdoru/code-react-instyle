@@ -1,0 +1,40 @@
+{
+    "name": "code-react-instyle",
+    "displayName": "code-react-instyle",
+    "description": "Convert SCSS/CSS to inline-able javascript for react native and friends.",
+    "version": "0.0.1",
+    "publisher": "bookworms",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:css",
+        "onLanguage:scss",
+        "onLanguage:sass"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.convertStyle",
+            "title": "Convert to inline JavaScript Style"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "react-instyle": "0.0.12"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
