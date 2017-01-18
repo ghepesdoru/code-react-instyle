@@ -2,7 +2,7 @@
     "name": "code-react-instyle",
     "displayName": "code-react-instyle",
     "description": "Convert SCSS/CSS to inline-able javascript for react native and friends.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "bookworms",
     "engines": {
         "vscode": "^1.5.0"
